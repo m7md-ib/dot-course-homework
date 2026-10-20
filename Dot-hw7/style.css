@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*
+    ========================
+    SECTION 1 - Home
+    ========================
+*/
+
+/* header */
+.section1 {
+  height: 100vh;
+  background-image: url("assets/1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  box-shadow: 1px 1px 5px rgb(196, 194, 191);
+}
+header h1 {
+  font-size: 25px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: rgb(135, 134, 134);
+  font-weight: lighter;
+}
+h1 span {
+  color: rgb(222, 113, 11);
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+header div a {
+  text-decoration: none;
+  color: rgb(135, 134, 134);
+  font-size: 18px;
+  transition: 300ms;
+  padding: 15px;
+}
+header div a:hover {
+  color: rgb(222, 113, 11);
+}
+
+/* section body */
+
+.sec1 {
+  margin: 80px 0 0 90px;
+}
+.sec1 h2 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.4px;
+}
+.sec1 h1 {
+  font-size: 70px;
+  color: rgb(9, 66, 237);
+  margin: 30px 0;
+  letter-spacing: 0.4px;
+}
+.sec1 p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  width: 400px;
+  font-weight: bolder;
+  width: 490px;
+}
+.sec1 button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(9, 66, 237);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.sec1 button:hover {
+  background-color: rgb(222, 113, 11);
+  transform: scale(1.1);
+}
+.icons {
+  margin-top: 50px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.icons i {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  color: rgb(222, 113, 11);
+  transform: scale(1.2);
+}
+
+/* ========================
+   SECTION 2 - My Services
+======================== */
+
+.section2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.section2 h2 {
+  font-size: 30px;
+  color: rgb(9, 66, 237);
+  text-align: center;
+  margin: 0;
+}
+
+/* Cards Container */
+.sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sec2 .card {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(196, 194, 191);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.sec2 .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sec2 .card a {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.sec2 .card i {
+  font-size: 60px;
+  color: rgb(9, 66, 237);
+}
+
+.sec2 .card h3 {
+  font-size: 20px;
+  color: rgb(9, 66, 237);
+  margin: 5px 0;
+}
+
+.sec2 .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  padding: 0 10px;
+}
+
+/*
+    ========================
+    SECTION 3 - Projects
+    ========================
+*/
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+  background-color: rgb(4, 3, 82);
+}
+
+.proj {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sec3 {
+  max-width: 1100px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sec3 .proj-card {
+  width: 360px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(196, 194, 191);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-img img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.htows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 10px;
+}
+.htows a {
+  text-decoration: none;
+  color: blue;
+}
+.htows a:hover {
+  color: rgb(22, 3, 131);
+}
+
+/*
+  ========================
+    SECTION 4 - Contact
+    ========================
+*/
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 60px 0;
+}
+.cont-cord {
+  width: 260px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(196, 194, 191);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.cont-cord i {
+  color: blue;
+  font-size: 50px;
+}
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background: rgb(16, 0, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+footer p {
+  color: white;
+  margin-left: 40px;
+}
+footer p span {
+  color: blue;
+}
+.icons2 {
+  margin-right: 40px;
+}
+.icons2 a i {
+  color: white;
+  margin: 5px;
+}

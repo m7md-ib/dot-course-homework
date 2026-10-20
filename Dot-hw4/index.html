@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      a {
+        border: 4px solid green;
+        padding: 20px 40px;
+        text-decoration: none;
+        color: black;
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: 900;
+      }
+      a:hover {
+        background-color: green;
+        color: white;
+      }
+
+      ul {
+        margin: 20px;
+        background-color: yellow;
+        list-style-type: square; /* يجعل الشكل مربعات */
+      }
+      li::marker {
+        color: orange;
+      }
+
+      div {
+        position: relative;
+      }
+
+      img {
+        width: 130px;
+        height: 170px;
+        position: absolute;
+      }
+      div h1 {
+        z-index: 1;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">This is a link</a>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <div>
+      <img src="toji 1927x1080.jpg" alt="Toji character in jujutsu kaisen" />
+      <h1>This is a heading</h1>
+    </div>
+  </body>
+</html>

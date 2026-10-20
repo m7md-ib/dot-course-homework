@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-content {
+  margin-left: 70px;
+}
+/* sidebar */
+.sidebar {
+  height: 100%;
+  width: 70px;
+  background: #112640;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+}
+.sidebar a i {
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+}
+/*home*/
+/* Overlay أسود شفاف */
+.home::before {
+  content: "";
+  position: absolute; /* نثبت العنصر فوق كل شيء */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.421); /* أسود مع شفافية 50% */
+  z-index: 1; /* ضعها تحت النصوص */
+}
+.home {
+  position: relative; /* مهم ليتمركز overlay داخلها */
+  height: 100vh;
+  background-image: url("assets/toji 1927x1080.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  z-index: 0; /* تأكد أن overlay فوق الخلفية */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.home h1,
+.home p,
+.home button {
+  position: relative;
+  z-index: 2; /* فوق overlay */
+}
+.home h1 {
+  font-size: 50px;
+}
+.home a {
+  text-decoration: none;
+  font-size: 25px;
+  color: blue;
+}
+.home p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+.home button {
+  padding: 12px 18px 12px;
+  background: #112640;
+  border: 1px solid #0c1a2c;
+  border-radius: 5px;
+  margin: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.home button:hover {
+  background: #093366;
+}
+/*news*/
+.news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  text-align: center; /* يوسّط العنوان */
+}
+.news-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.news-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  max-width: 1300px; /* يتحكم بعرض الصور */
+  margin: auto; /* 🔥 هذا اللي بيوسط الصور */
+  margin-bottom: 10px;
+}
+.news-imgs img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.news-imgs img:hover {
+  transform: scale(1.05);
+}
+.news button {
+  width: 100px;
+  margin: 20px auto;
+  display: block;
+  background: rgb(26, 175, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+.news button:hover {
+  background: #093366;
+}
+/* footer */
+.footer-container {
+  background: lightgray;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+.fot1,
+.fot2 {
+  width: 48%;
+}
+.fot1 {
+  margin-left: 100px;
+  margin-right: 20px;
+}
+.fot1 h4,
+.fot2 h4 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.fot1 h3 {
+  margin-top: 30px;
+}
+.fot2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.fot2 label {
+  color: black;
+}
+.fot2 input {
+  padding: 14px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.fot2 button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #112640;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.fot2 button:hover {
+  background: #0a305e;
+}
+.fot2 textarea {
+  min-height: 90px;
+}
+.copy-r {
+  height: 80px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-r span {
+  color: lightskyblue;
+}
+/* 📱 موبايل */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+  }
+
+  .home {
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+  .home h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .home p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .news-container {
+    margin-left: auto;
+  }
+
+  .fot1 {
+    margin: 0;
+  }
+
+  .fot2 {
+    margin: 0;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .fot1,
+  .fot2 {
+    width: 100%;
+  }
+}
+
+/* 📲 موبايل صغير */
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 24px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .home button {
+    padding: 10px;
+  }
+}

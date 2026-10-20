@@ -1,0 +1,72 @@
+div{
+    background-color: rgba(219, 219, 219, 0.915);
+    width: 800px;
+    height: 335px;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    left: 340px;
+    border-radius: 10px;
+}
+div form{
+    position: relative;
+}
+input{
+    width:700px ;
+    height: 32px;
+    position: absolute;    
+    border-radius: 7px;
+    padding-left: 30px;
+    border: none;
+}
+input#name{
+    position: absolute;  
+    top: 30px; 
+    left: 30px;
+}
+input#last-name{
+    position: absolute;
+    top: 105px;
+    left: 30px;
+}
+label{
+    margin-left: 30px;
+    position: relative;
+    top: 7px;
+    left: 4px;
+}
+label#la2{
+    position: relative;
+    top: 20px;
+}
+label#sel{
+    position: relative;
+    top: 60px;
+}
+select{
+    position: relative;
+    top: 68px;
+    left: 30px;
+    width: 735px;
+    height: 32px;
+    border-radius: 7px;
+    padding-left: 30px;
+}
+hr{
+    position: relative;
+    top: 80px;
+}
+input[type=submit]{
+    position: relative;
+    width: 700px;
+    height: 40px;
+    top: 80px;
+    left: 45px;
+    background-color: rgb(0, 142, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: green;
+}
